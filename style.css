@@ -1,0 +1,303 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #55423d;
+  font-family: "Poppins", sans-serif;
+}
+
+.body-container {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1.2rem;
+  gap: 2rem;
+}
+
+.hero-description {
+  color: white;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 34px;
+}
+
+.hero-subtitle {
+  font-size: 28px;
+}
+
+.hero-social-icons-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.text-secondary {
+  color: #fff3ec;
+}
+
+.fa-brands {
+  transition: all 0.3s linear;
+}
+
+.fa-brands:hover {
+  color: #271c19;
+}
+
+.hero-cta-btn-groups {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-primary {
+  background-color: #ffc0ad;
+  color: #271c19;
+  border-radius: 8px;
+  border: 1px solid #ffc0ad;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  padding: 1rem 1.2rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #bb8675;
+}
+
+.btn-primary:active {
+  background-color: #bb8675;
+}
+
+.btn-primary:focus {
+  background-color: #ffc0ad;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #ffc0ad;
+}
+
+.btn-outline:hover,
+.btn-outline:active,
+.btn-outline:focus {
+  color: #271c19;
+}
+
+.about-container {
+  background-color: #271c19;
+  width: 100%;
+  height: fit-content;
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-image-container {
+  width: 200px;
+  height: 250px;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #fff3ec;
+}
+
+.about-heading {
+  color: #fff3ec;
+  font-weight: 600;
+}
+
+.about-paragraph {
+  color: #fff;
+  font-weight: 300;
+}
+
+.skills-container {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skills-heading-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-heading {
+  color: #fff3ec;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.horizontal-rule {
+  border-color: #fff3ec;
+}
+
+.skill-card-item {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #271c19;
+  padding: 10px 1rem;
+  border-radius: 10px;
+}
+
+.skill-image-container {
+  width: 50px;
+  height: 50px;
+}
+
+.skill-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.skill-title {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.skills-cards-deck {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.experience-container {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.experience-heading-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-heading {
+  color: #fff3ec;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.experience-cards-lists {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.experience-card {
+  border-bottom: 1px solid #fff3ec;
+  padding: 1rem 0;
+}
+
+.experience-duration {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.experience-company-name {
+  font-weight: 600;
+  color: #fff3ec;
+}
+
+.experience-accomplishments {
+  list-style-position: inside;
+  list-style-type: circle;
+}
+
+@media (min-width: 768px) {
+  .body-container {
+    max-width: 700px;
+  }
+
+  .hero-container {
+    align-items: center;
+  }
+
+  .hero-image-container {
+    width: 300px;
+    height: 350px;
+  }
+
+  .hero-title {
+    font-size: 44px;
+  }
+
+  .hero-subtitle {
+    font-size: 38px;
+  }
+
+  .about-container {
+    flex-direction: row;
+  }
+
+  .about-image-container {
+    width: 40%;
+    height: 350px;
+  }
+
+  .about-content {
+    width: 60%;
+  }
+
+  .experience-card {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .experience-duration-container {
+    border-right: 1px solid #fff3ec;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .body-container {
+    max-width: 900px;
+  }
+
+  .hero-container {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1680px) {
+  .body-container {
+    max-width: 1200px;
+  }
+}
